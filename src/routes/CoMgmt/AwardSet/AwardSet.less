@@ -1,0 +1,99 @@
+@import "../../../../node_modules/antd/lib/style/themes/default.less";
+@import "../../../utils/utils.less";
+
+
+
+.antAdvancedSearchForm .antFormItem {
+  display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+  display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+  display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
+
+.empList{
+  width: 100%;
+  height: 300px;
+  border: 1px solid #d9d9d9;
+  overflow:auto;
+  >div:nth-child(1){
+    width:100%;
+    height:31px;
+    >div:nth-child(2){
+      display: inline-block;
+      float: right;
+      color: #36A9E1;
+      padding: 5px 10px;
+      cursor:pointer;
+    }
+    >div:nth-child(1){
+      display: inline-block;
+      float: right;
+      color: #D9534F;
+      padding: 5px 10px;
+      cursor:pointer;
+    }
+  }
+  >div:nth-child(2){
+    width:100%;
+    height:269px;
+    span{
+      float: left;
+      height: 30px;
+      line-height: 30px;
+      cursor: default;
+      padding: 0 10px;
+      font-size: 14px;
+      i{
+        color:#36A9E1;
+        margin-right:5px;
+      }
+      &:hover{
+        background-color: #36A9E1;
+        color:white;
+        i{
+          color:white;
+        }
+      }
+    }
+  }
+}
+
+.empCheck{
+  width: 100%;
+  height: 130px;
+  margin-top:20px;
+  border: 1px solid #d9d9d9;
+  overflow:auto;
+  span{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    cursor: default;
+    padding: 0 10px;
+    font-size: 14px;
+    i{
+      color:#36A9E1;
+      margin-left:5px;
+    }
+    &:hover{
+      background-color: #36A9E1;
+      color:white;
+      i{
+        color:white;
+      }
+    }
+  }
+}
+
+.orgTree{
+  width: 100%;
+  height: 450px;
+  border: 1px solid #d9d9d9;
+  overflow:auto;
+}
+
+.orgButton{
+  margin-top:20px;
+}

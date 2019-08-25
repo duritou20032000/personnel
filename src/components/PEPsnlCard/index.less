@@ -1,0 +1,77 @@
+
+.center{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  /*垂直居中*/
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  /*水平居中*/
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.cardLayout{
+  margin:20px 0px;
+  img{
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    border-radius: 5px;
+  }
+}
+
+.iconstyle{
+  i{
+    font-size: 16px;
+    margin-right: 10px;
+    transition:transform 0.3s;
+    -moz-transition:transform 0.3s;
+    -webkit-transition:transform 0.3s;
+    -o-transition:transform 0.3s;
+  }
+}
+
+.codepanel{
+  position: relative;
+}
+
+.codestyle{
+  width: 150px;
+  height: 150px;
+}
+
+.sharebtn{
+  position:absolute;
+  right: 0px;
+  top:0px;
+  width: 38px;
+  height: 38px;
+  font-size: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.65);
+  line-height: 38px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.note{
+  margin-top:10px;
+}
+
+.expandpanel{
+  overflow: hidden;
+  max-height:8888px;
+  transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+  -moz-transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+  -webkit-transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+  -o-transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.3s;
+}

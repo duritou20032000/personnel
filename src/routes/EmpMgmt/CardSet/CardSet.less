@@ -1,0 +1,201 @@
+@import "~antd/lib/style/themes/default.less";
+@import "../../utils/utils.less";
+
+.mapChart {
+  padding-top: 24px;
+  height: 457px;
+  text-align: center;
+  img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 437px;
+  }
+}
+
+.pieCard :global(.pie-stat) {
+  font-size: 24px!important;
+}
+
+@media screen and (max-width: @screen-lg) {
+  .mapChart {
+    height: auto;
+  }
+}
+
+
+.prePanel{
+  height: 524px;
+  width: 560px;
+  background-color: #CCCBD1;
+  margin: 0px auto;
+  overflow: hidden;
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+}
+
+.prePanelActive{
+  border: 2px dotted red  !important;
+}
+
+.preCardPanel{
+  width: 400px;
+  height: 243px;
+  background-color:white;
+  margin-left: 80px;
+  float:left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px dotted transparent;
+  overflow: hidden;
+  position: relative;
+  background-size: 100% !important;
+}
+
+.setPanel{
+  width: 390px;
+  height: 636px;
+  margin: 0px auto;
+  >div:nth-child(1){
+    width: 390px;
+    height: 60px;
+    background: #f8f8f8;
+    overflow: hidden;
+    dl{
+      clear: both;
+      height: 30px;
+      line-height: 30px;
+      padding: 5px 10px 5px 10px;
+      margin: 0;
+      dd{
+        float: left;
+        padding: 0;
+        margin:0px 0px 0px 8px;
+        color: #ff0000;
+        list-style: none;
+        display: block;
+      }
+    }
+  };
+
+  >div:nth-child(2){
+    width: 390px;
+    height: 30px;
+    ul{
+      margin: 10px 0px 0px 0px;
+      overflow: hidden;
+      padding: 0px 0px 0px 10px;
+      list-style: none;
+      li{
+        width: 100px;
+        height: 30px;
+        float: left;
+        overflow: hidden;
+        text-align: center;
+        border: none;
+        background: #ede9e3;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        a{
+          line-height: 30px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #000;
+          text-align: center;
+          display: block;
+          font-family: 微软雅黑;
+          text-decoration: none;
+          border: none;
+        }
+        &.select{
+          background: #584a58;
+          border: none;
+          padding-left: 0px;
+          a{
+            color: #fff;
+          }
+        }
+      }
+    }
+  };
+
+  >div:nth-child(3){
+    border: 2px solid #584a58;
+    background: #fff;
+    .pageItem{
+      width: 368px;
+      margin: 10px auto;
+      height: 410px;
+      overflow: auto;
+      margin-top: 0;
+    }
+  };
+
+
+}
+
+.alignleft, .alignright, .aligntop, .alignbottom, .aligncenter, .alignmiddle, .alignhori, .alignvert{ width: 80px; height: 20px; background: url('../../../public/image/aligntypebg.gif') no-repeat; display: block; float: left; }
+.alignleft { background-position: 0px 0px; }
+.alignright { background-position: 0px -20px; }
+.aligntop { background-position: 0px -40px; }
+.alignbottom { background-position: 0px -60px; }
+.aligncenter { background-position: 0px -100px; }
+.alignmiddle { background-position: 0px -80px; }
+.alignhori { background-position: 0px -120px; }
+.alignvert { background-position: 0px -140px; }
+
+.alignleft:hover { background-position: -80px 0px; }
+.alignright:hover { background-position: -80px -20px; }
+.aligntop:hover { background-position: -80px -40px; }
+.alignbottom:hover { background-position: -80px -60px; }
+.aligncenter:hover { background-position: -80px -100px; }
+.alignmiddle:hover { background-position: -80px -80px; }
+.alignhori:hover { background-position: -80px -120px; }
+.alignvert:hover { background-position: -80px -140px; }
+
+
+.uiSelected{
+  border: dashed 1px #0a76bd;
+}
+
+.uiSelectable{
+  width:0px;
+  height:0px;
+  position: absolute;
+  z-index: 100;
+  border: 1px dotted black;
+}
+
+.cardsetSubmit{
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  font-family: "Microsoft YaHei";
+  padding: 9px 20px;
+  background: #c50000;
+  width: 129px;
+  height: 39px;
+  margin-top: 20px;
+  margin-right: 10px;
+  float: right;
+}
+
+.uploadBg{
+  width: 340px;
+  height: auto;
+  margin-bottom: 10px;
+  span{
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    width: 200px;
+    color: #272727;
+    text-decoration: none;
+    cursor:pointer;
+  }
+}
+

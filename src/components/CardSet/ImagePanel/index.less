@@ -1,0 +1,90 @@
+.imgItem{
+  width: 340px;
+  min-height: 60px;
+  overflow: hidden;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-bottom: 1px solid #C9E8FF;
+  .imgLeft{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+    img{
+      width: 58px;
+      height: 58px;
+      border: 1px solid #5399C7;
+    }
+  }
+  .imgRight{
+    height: 60px;
+    float: left;
+    width: 250px;
+    .uploadImg{
+      height: 30px;
+      width: 100%;
+      float: left;
+      a{
+        height: 25px;
+        width: 80px;
+        background: #584a58;
+        display: block;
+        float: left;
+        margin-left: 10px;
+        color: white;
+        text-align: center;
+        line-height: 25px;
+        text-decoration: none;
+      }
+    }
+    .resizeImg{
+      margin-top: 8px;
+      height: 20px;
+      width: 100%;
+      float: left;
+      span:nth-child(1){
+        float: left;
+        margin-left: 10px;
+      }
+      span:nth-child(2){
+        float: left;
+        width: 135px;
+        height: 8px;
+        margin-left: 10px;
+        margin-top: 7px;
+        background: #584a58;
+        border: none;
+        position: relative;
+        text-align: left;
+        a{
+          background: #f84858;
+          border-radius: 0px;
+          height: 14px;
+          width: 14px;
+          top: -.2em;
+          position: absolute;
+          z-index: 2;
+          cursor: default;
+          border: 1px solid #fff;
+          margin: 0px;
+          &:hover{
+            border: 1px solid #fff;
+            font-weight: normal;
+            color: #fff;
+          }
+        }
+      }
+      a{
+        background: url(../../../../public/image/ico-close2.gif) no-repeat;
+        width: 8px;
+        height: 8px;
+        display: block;
+        float: right;
+        margin-top: 7px;
+        margin-left: 10px;
+
+      }
+    }
+  }
+}

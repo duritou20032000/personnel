@@ -1,0 +1,231 @@
+.flex{
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  /*垂直居中*/
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.start{
+  .flex;
+
+  /*水平居左*/
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.end{
+  .flex;
+
+  /*水平居左*/
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.center{
+  .flex;
+
+  /*水平居中*/
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.detailHead{
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  border-radius: 2px;
+}
+
+.detailBody{
+  padding: 24px 32px;
+  border: 1px solid #e8e8e8;
+  background-color: white;
+  border-radius: 2px;
+  margin-bottom:30px;
+}
+
+.detailFooter{
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  border-radius: 2px;
+}
+
+.detailRow{
+  font-size: 14px;
+  border-bottom: 1px solid #e8e8e8;
+  overflow: hidden;
+  padding: 15px 0px;
+  label{
+    &:after{
+      content: ":";
+      margin: 0 20px 0 2px;
+      position: relative;
+      top: -0.5px;
+    }
+  }
+  >div{
+    word-break: break-all;
+  }
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+
+  /*水平居左*/
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.detailPhoto{
+  float: left;
+  margin-right: 20px;
+  img{
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+  }
+  >div{
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    background-color: #e8e8e8;
+  }
+}
+
+.detailUInfo{
+  float:left;
+  .username{
+    font-size:18px;
+    margin-bottom:10px;
+  }
+}
+
+.detailSystime{
+  margin-left:20px;
+}
+
+.detailBack{
+  margin-top:50px;
+}
+
+.attimg{
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  float: left;
+  border-radius: 4px;
+}
+
+.attfile{
+  float:left;
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+  border-radius: 4px;
+  position:relative;
+  >img{
+    width: 100px;
+    height: 100px;
+  }
+  >div{
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    text-align: center;
+    color:#40a9ff;
+    cursor:pointer;
+    &:hover{
+      text-decoration:underline;
+    }
+  }
+}
+
+.bigImageBg{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  height: 100%;
+  z-index: 1000;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  /*垂直居中*/
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  /*水平居中*/
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  overflow: auto;
+  transition:all 0.5s ease-out;
+  -webkit-transition:all 0.5s ease-out;
+  >img{
+    max-width:90%;
+    max-height:90%;
+  }
+}
+
+.signerPanel{
+  width: 100%;
+  overflow: hidden;
+  padding:10px;
+  .headCell{
+    float: left;
+    margin-right:20px;
+    >img{
+      width:80px;
+      height:80px;
+      border-radius:4px;
+    }
+    >div{
+      text-align: center;
+      margin-top:8px;
+    }
+  }
+  .contentCell{
+    float:left;
+    >div{
+      width:300px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

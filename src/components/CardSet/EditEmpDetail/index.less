@@ -1,0 +1,50 @@
+.portrait{
+  width: 160px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.uploadParentDiv{
+  position:relative;
+  width:100%;
+  height:auto;
+  overflow:hidden;
+  &:hover .uploadNoticeBg{
+    opacity: 1;
+  }
+  img{
+    min-height:80px;
+  }
+}
+
+.uploadNoticeBg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  border-radius: 5px;
+  top: 0px;
+  opacity: 0;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
